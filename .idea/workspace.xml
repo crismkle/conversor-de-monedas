@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c25319e0-2cd5-4d58-bccb-44556800b5a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/MonedaExchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registro/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registro/Registro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/ConsultaMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/ConsultaMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/CrearArchivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/CrearArchivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/Moneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Moneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/MonedaExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/MonedaExchange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
