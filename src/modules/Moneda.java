@@ -1,4 +1,2 @@
-package modules;
-
-public record Moneda() {
+package modules;public class Moneda {
 }
