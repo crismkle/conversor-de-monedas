@@ -1,14 +1,14 @@
 package modules;
 
 public class Moneda {
-    String nombreAcronimo;
+    String nombreCodigo;
     Double ratio;
     String pais;
     String lastUpdate;
 
 
-    public Moneda(String nombreAcronimo, String pais) {
-        this.nombreAcronimo = nombreAcronimo;
+    public Moneda(String nombreCodigo, String pais) {
+        this.nombreCodigo = nombreCodigo;
         this.pais = pais;
         this.lastUpdate = new String();
     }
@@ -29,8 +29,8 @@ public class Moneda {
         this.lastUpdate = miMonedaEx.time_last_update_utc();
     }
 
-    public String getNombreAcronimo() {
-        return nombreAcronimo;
+    public String getNombreCodigo() {
+        return nombreCodigo;
     }
 
     public String getPais() {

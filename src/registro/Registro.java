@@ -1,6 +1,5 @@
 package registro;
 
-import java.util.Date;
 
 public class Registro {
     String consultaDate;
@@ -17,17 +16,17 @@ public class Registro {
         this.moneda_base = moneda_base;
         this.moneda_objetivo = moneda_objetivo;
         this.ratio = ratio;
-        this.valorConvertido = valorConvertido;
+        this.valorConvertido = (double)Math.round(valorConvertido * 100d) / 100d;
         this.lastUpdate = lastUpdate;
     }
 
     @Override
     public String toString() {
         return "Fecha consulta = " + consultaDate + "\n" +
-                "Valor = " + valor + " " + moneda_base +"\n" +
+                "Importe = " + valor + " " + moneda_base +"\n" +
                 "Ratio conversión = " + ratio + "\n" +
                 "Última act. API = " + lastUpdate + "\n" +
-                "Valor convertido = " + String.format("%.2f", valorConvertido) + " " + moneda_objetivo + "\n";
+                "Importe convertido = " + valorConvertido + " " + moneda_objetivo + "\n";
 
     }
 }

@@ -4,11 +4,9 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import registro.Log;
-import registro.Registro;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class CrearArchivo {
 
@@ -19,7 +17,7 @@ public class CrearArchivo {
                 .create();
 
         try {
-            FileWriter logFile = new FileWriter("log.json");
+            FileWriter logFile = new FileWriter("log_consultas.json");
             logFile.write(gson.toJson(milog.getRegistros()));
             logFile.close();
         } catch (IOException e) {
