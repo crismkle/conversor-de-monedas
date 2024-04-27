@@ -1,0 +1,20 @@
+[
+  {
+    "ConsultaDate": "Fri Apr 26 22:59:59 ART 2024",
+    "Valor": 250.0,
+    "Moneda_base": "USD",
+    "Moneda_objetivo": "BRL",
+    "Ratio": 5.1573,
+    "ValorConvertido": 1289.325,
+    "LastUpdate": "Sat, 27 Apr 2024 00:00:01 +0000"
+  },
+  {
+    "ConsultaDate": "Fri Apr 26 23:00:16 ART 2024",
+    "Valor": 600.0,
+    "Moneda_base": "USD",
+    "Moneda_objetivo": "ARS",
+    "Ratio": 864.75,
+    "ValorConvertido": 518850.0,
+    "LastUpdate": "Sat, 27 Apr 2024 00:00:01 +0000"
+  }
+]

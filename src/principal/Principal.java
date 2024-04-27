@@ -1,11 +1,13 @@
 package principal;
 
 import modules.ConsultaMoneda;
+import modules.CrearArchivo;
 import modules.Moneda;
 import modules.MonedaExchange;
 import registro.Log;
 import registro.Registro;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -38,6 +40,8 @@ public class Principal {
             try {
                 if (Integer.valueOf(opcion) == 7) {
                     System.out.println(misRegistros);
+                    CrearArchivo arch = new CrearArchivo();
+                    arch.guardarJson(misRegistros);
                     break;
                 }
                 System.out.println("Ingrese el valor a convertir: ");
@@ -86,25 +90,19 @@ public class Principal {
                 miMoneda.setRatio(monedaExch);
                 miMoneda.setLastUpdate(monedaExch);
 
-                System.out.println("\nEl valor de " + valor + " " + base +  " equivale a =>>> " + String.format("%.2f", miMoneda.calcularConversion(valor)) + " " + objetivo + "\n");
+                Double valConvertidoDouble = miMoneda.calcularConversion(valor);
+                System.out.println("\nEl valor de " + valor + " " + base +  " equivale a =>>> " + String.format("%.2f", valConvertidoDouble) + " " + objetivo + "\n");
 
                 Date ahoraDate = new Date();
-                Registro reg = new Registro(ahoraDate, valor, base, objetivo, miMoneda.getRatio(), miMoneda.getLastUpdate());
+                Registro reg = new Registro(ahoraDate.toString(), valor, base, objetivo, miMoneda.getRatio(), valConvertidoDouble, miMoneda.getLastUpdate());
                 misRegistros.agregarRegistro(reg);
 
             } catch (NumberFormatException e) {
-                System.out.println("Opción no válida.");
+                System.out.println("Opción no válida. " + e.getMessage());
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
     }
 
-
-
-
-//    Elija una opción válida:
-
-//    https://v6.exchangerate-api.com/v6/ca3f722ac5cf73a786281366/pair/USD/ARS
-//    "conversion_rate"
 }

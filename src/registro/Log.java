@@ -11,8 +11,17 @@ public class Log {
 
     @Override
     public String toString() {
-        return "Log{" +
-                "misRegistros=" + misRegistros +
-                '}';
+        String ret = new String();
+        ret = "\n\n-------- RESUMEN DE CONSULTAS --------\n\n";
+        for (int i = 0; i < misRegistros.size(); i++) {
+            int j = i+1;
+            ret += i+1 + ") ---- Consulta nº " + j + " ----" + "\n" + misRegistros.get(i) + "\n\n";
+        }
+
+        return ret;
+    }
+
+    public ArrayList<Registro> getRegistros() {
+        return misRegistros;
     }
 }

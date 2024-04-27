@@ -24,7 +24,7 @@ public class ConsultaMoneda {
             return new Gson().fromJson(response.body(), MonedaExchange.class);
 
         } catch (Exception e) {
-            throw new RuntimeException("No se encontró la conversión.");
+            throw new RuntimeException("No se encontró la conversión. " + e.getMessage());
         }
 
     }
