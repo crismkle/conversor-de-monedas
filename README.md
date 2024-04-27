@@ -1,11 +1,11 @@
 <h1 align="center"> CONVERSOR DE MONEDAS </h1>
 
-Convierte un valor de una moneda a otra consultando una API con las cotizaciones actualizadas.
+Convierte un valor de una moneda a otra consumiendo una API con las cotizaciones actualizadas.
 
 ## :hammer:Funcionalidades del proyecto
-- Muestra un menú por consola al usuario con las opciones para convertir monedas
-- Pide una opción y un valor a convertir
-- Imprime el valor convertido
+- Muestra un menú al usuario con las opciones para convertir monedas
+- Pide una opción y un importe a convertir
+- Imprime el importe convertido
 - Si el usuario elige salir del programa, se muestra un resumen de las consultas hechas
 - Se guardan las consultas en un Json
 
