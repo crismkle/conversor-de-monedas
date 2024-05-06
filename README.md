@@ -12,13 +12,13 @@ Para hacer las conversiones utiliza la api *exchangerate-api*.
 - Se guardan las consultas en un Json
 
 
-## Despliegue 📦
+## 📦 Despliegue
 
 Usar un IDE para Java, preferentemente IntelliJ.
 Instalar la libreía Gson si es necesario.
 Ejecutar por consola.
 
-## Ejemplos 💻
+## 💻 Ejemplos
 
 Seleccionando una de las opciones con las monedas predefinidas. Convierte 50 USD (dólares estadounidenses) a pesos colombianos.
 
@@ -37,5 +37,5 @@ Al elegir salir, se muestran todas las consultas realizadas con sus respectivos 
 
 
 
-## Autor ✒️
+## ✒️ Autor
 * **Cristian Muñoz** - [crismkle](https://github.com/crismkle)
