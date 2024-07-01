@@ -4,6 +4,10 @@ Proyecto Challenge del curso de Java de Alura/Oracle.
 Convierte un valor de una moneda a otra consumiendo una API con las cotizaciones actualizadas.
 Para hacer las conversiones utiliza la api *exchangerate-api*.
 
+<p align="center">
+  <img src="https://github.com/crismkle/conversor-de-monedas/assets/122938039/530208a0-ac20-4122-966a-5248a8f9284b">
+</p>
+
 ## :hammer:Funcionalidades del proyecto
 - Muestra un menú al usuario con las opciones para convertir monedas
 - Pide una opción y un importe a convertir
